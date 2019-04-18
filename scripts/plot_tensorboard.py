@@ -85,15 +85,15 @@ def main():
     from itertools import cycle
     
     parser = ArgumentParser()
-    parser.add_argument('--log_dirs', nargs='+', required=True)
-    parser.add_argument('--log_labels', nargs='+')
-    parser.add_argument('--scalar_tags', nargs='+', required=True)
+    parser.add_argument('--log-dirs', nargs='+', required=True)
+    parser.add_argument('--log-labels', nargs='+')
+    parser.add_argument('--scalar-tags', nargs='+', required=True)
     parser.add_argument('--xlabels', nargs='+', default=['Steps'])
     parser.add_argument('--ylabels', nargs='+', default=None)
     parser.add_argument('--titles', nargs='+', default=[''])
-    parser.add_argument('--max_step', type=int, default=None)
-    parser.add_argument('--wall_time', dest='wall_time', action='store_true')
-    parser.add_argument('--image_prefix', type=str, default='')
+    parser.add_argument('--max-step', type=int, default=None)
+    parser.add_argument('--wall-time', dest='wall_time', action='store_true')
+    parser.add_argument('--image-prefix', type=str, default='')
     parser.add_argument('--smoothing', type=float, default=0.9)
  
     args = parser.parse_args()
